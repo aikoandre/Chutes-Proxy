@@ -1,0 +1,5 @@
+# Ignore environment variable files
+.env
+run.sh
+.kilocode/
+__pycache__/
