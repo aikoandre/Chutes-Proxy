@@ -12,7 +12,7 @@ This project provides a simple proxy server to make the Chutes AI API directly c
 
 1.  **Clone the repository (if you haven't already):**
     ```bash
-    git clone https://github.com/your-repo/chutes-router.git # Replace with actual repo URL
+    git clone https://github.com/aikoandre/Chutes-Proxy.git
     cd chutes-router
     ```
 
@@ -33,16 +33,38 @@ This project provides a simple proxy server to make the Chutes AI API directly c
 
 4.  **Run the Server:**
     ```bash
-    uvicorn proxy:app --host 0.0.0.0 --port 8000 --reload
+    uvicorn proxy:app --host 0.0.0.0 --port 6000 --reload
     ```
-    The proxy will be accessible at `http://localhost:8000`.
+    The proxy will be accessible at `http://localhost:6000`.
 
 ## Model Information
 
 Please note that all models have a global limit of 200 requests per minute. Only a few models currently work reliably with this proxy method. The list will be updated as more models are tested and confirmed.
 
 **Currently Working Models:**
-*   `TheDrummer/Skyfall 36B V2`
+*   `Deepseek R1 Distill Qwen 32B AWQ`
+*   `Devstral Small 2505`
+*   `Llama 4 Maverick 17B 128E Instruct FP8`
+*   `Llama 4 Scout 17B 16E Instruct`
+*   `Mistral Small 3.2 24B Instruct 2506`
+*   `Deepseek R1 0528`
+*   `Deepseek R1 Distill Llama 70B`
+*   `Llama Poro 2 70B Instruct`
+*   `MAI DS R1 FP8`
+*   `MiniMax M1 80K`
+*   `Kimi Dev 72B`
+*   `DeepHermes 3 Mistral 24B Preview`
+*   `InternVL3 78B`
+*   `Qwen2.5 Coder 32B Instruct`
+*   `Qwen2.5 VL 72B Instruct`
+*   `Qwen3 235B A22B`
+*   `Reka Flash 3`
+*   `Llama XLAM 2 70B FC R`
+*   `Cydonia 24B V2.1`
+*   `Skyfall 36B V2`
+*   `TEMPLAR I`
+*   `Deepseek R1T Chimera`
+*   `Mistral Nemo Instruct 2407`
 
 ## Endpoints
 
